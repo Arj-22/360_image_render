@@ -16,7 +16,7 @@
                         <form enctype="multipart/form-data" method="post" action="index.php">
                             <div class="form-group">
                                 <label for="exampleFormControlFile1">Select Images</label>
-                                <input type="file" multiple="multiple" class="form-control-file" id="exampleFormControlFile1">
+                                <input type="file" multiple="multiple" class="form-control-file" name="images[]" id="exampleFormControlFile1">
                             </div>
     
                             <div class="form-footer pt-4 pt-5 mt-4 border-top">
@@ -39,4 +39,22 @@
 
 
 
-<!-- https://www.youtube.com/watch?v=kF_WVFdEC9s -->
+
+<?php 
+
+//     $target_dir = "./uploads/"; 
+// if($_FILES){
+//     $files = $_FILES["images"]["name"];
+
+//     print_r($files);
+
+
+//     for($i = 0; $i <= count($files) - 1; $i++){
+//         $target_file = $target_dir . basename($_FILES["images"]["name"][$i]);
+//         move_uploaded_file($_FILES["images"]["name"][$i], $target_file);
+//     }
+// }
+    
+
+
+?> 

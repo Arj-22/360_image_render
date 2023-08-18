@@ -13,7 +13,7 @@ for(let i = 1; i <= 50; i++){
   if(img_no < 10){
     val = "000"+img_no.toString() 
   }
-  else if( img_no >= 10){
+  else if( img_no >= 10 && img_no < 100){
     val = "00"+img_no.toString() 
   }
   else if( img_no >= 100){
@@ -26,7 +26,12 @@ for(let i = 1; i <= 50; i++){
   card.appendChild(dynamicSpan)
   card.appendChild(dynamicImage)
 
-  // card += `<span style="--i:'+i.toString()+';"></span>
-  // <img src="../assets/addroom_modular_3030_door_dwarf_panel_'+val+'.jpg">`
+}
+
+
+function getImages(){
+
+
+  
 }
 
